@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useRef } from 'react';
 import {
   Container, Row, Col, Form, Button, Nav,
