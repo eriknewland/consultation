@@ -4,10 +4,9 @@ import {
   Container, Row, Col, Card,
 } from 'react-bootstrap';
 import ScrollTrigger from 'react-scroll-trigger';
-import placeholder from '../../assets/process-placeholder1.jpg';
-import placeholder2 from '../../assets/process-placeholder2.jpg';
-import placeholder3 from '../../assets/process-placeholder3.jpg';
-// import { text, title } from './constants/process';
+import placeholder from '../../assets/process-placeholder1.webp';
+import placeholder2 from '../../assets/process-placeholder2.webp';
+import placeholder3 from '../../assets/process-placeholder3.webp';
 import sanityClient from '../../sanityClient';
 
 function Process() {

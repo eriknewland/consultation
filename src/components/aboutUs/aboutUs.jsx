@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ScrollTrigger from 'react-scroll-trigger';
-// import copy from './constants/aboutUs'; // removed
 import sanityClient from '../../sanityClient';
 
 function AboutUs() {
