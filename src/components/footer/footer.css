@@ -1,0 +1,27 @@
+.form-control:focus {
+  border-color: #444; /* Change this to your desired border color */
+  box-shadow: none;
+}
+
+.form-control + .floating-label {
+  opacity: 0; /* Hide the label by default */
+  transition: opacity 0.3s, top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.form-control:focus + .floating-label,
+.form-control:not(:placeholder-shown) + .floating-label {
+  top: -1.3rem;
+  /* font-size: 0.8rem; */
+  color: #444; /* Change this to your desired label color */
+  opacity: 1; /* Show the label when the input field is focused or has a value */
+}
+
+.form-control:focus::placeholder {
+  color: transparent;
+}
+
+#footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  width: 100%
+}

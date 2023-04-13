@@ -1,0 +1,14 @@
+@keyframes moveLeft {
+  0% {
+      -webkit-transform: translateX(100px)
+  }
+  100% {
+      -webkit-transform: translateX(0px)
+  }
+}
+
+.dropdown.show .dropdown-menu {
+  max-height: 300px;
+  opacity: 1;
+  -webkit-animation: moveLeft 1s forwards
+}
