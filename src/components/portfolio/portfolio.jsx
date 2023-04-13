@@ -4,7 +4,7 @@ import {
   Card, Row, Col, Container, ButtonGroup, Button, Modal,
 } from 'react-bootstrap';
 import sanityClient from '../../sanityClient';
-import useFadeIn from '../../hooks/fadeinHook'; // Import the custom hook
+import useFadeIn from '../../helpers/fadeinHook'; // Import the custom hook
 
 function Portfolio() {
   const [postData, setPostData] = useState([]);

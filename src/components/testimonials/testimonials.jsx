@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Container, Row, Col, Card,
 } from 'react-bootstrap';
-import FadeInSection from '../../hooks/intersectionObserver';
+import FadeInSection from '../../helpers/intersectionObserver';
 import './testimonials.css';
 
 function Testimonials() {
