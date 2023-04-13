@@ -87,7 +87,7 @@ MIT License. -->
 
 
 <!-- Add banner here -->
-![Banner](https://github.com/navendu-pottekkat/awesome-readme/blob/master/header.png) The best dimensions for the banner is 1280x650px.
+<img src="https://source.unsplash.com/random/1280x650?technology" alt="random technology image">
 
 # Intellifusion: A consultation website
 
