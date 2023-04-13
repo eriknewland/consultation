@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   Container, Row, Col, Form, Button, Nav,
 } from 'react-bootstrap';
@@ -6,46 +6,47 @@ import './footer.css';
 import {
   FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn,
 } from 'react-icons/fa';
-// import { emailjs } from 'emailjs/email';
+import emailjs from '@emailjs/browser';
+import { SnackbarProvider, enqueueSnackbar } from 'notistack';
 
 function Footer() {
+  const form = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
-
     // Send an email using EmailJS
-    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target, 'YOUR_USER_ID')
-    //   .then((result) => {
-    //     console.log(result.text);
-    //     alert('Message sent successfully'); //consider a 'Snackbar'
-    //   }, (error) => {
-    //     console.log(error.text);
-    //     alert('Failed to send message'); //consider a 'Snackbar'
-    //   });
-
+    emailjs.sendForm('service_glh43la', 'template_hpqlutn', form.current, 'LDKqItcOdzGy0MTzd')
+      .then((result) => {
+        console.log(result.text);
+        enqueueSnackbar('Message sent successfully', { variant: 'success' });
+      }, (error) => {
+        console.log(error.text);
+        enqueueSnackbar('Failed to send message', { variant: 'error' });
+      });
     event.target.reset();
   };
 
   return (
     <footer id="footer">
       <Container>
+        <SnackbarProvider />
         <Row>
           <Col md={6}>
             <h4>Get in Touch</h4>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={(e) => handleSubmit(e)} ref={form}>
               <Form.Group controlId="formName">
-                <Form.Control type="text" placeholder="Enter your name" required />
+                <Form.Control type="text" name="user_name" placeholder="Enter your name" required />
                 <Form.Label className="floating-label">Name</Form.Label>
                 {' '}
               </Form.Group>
 
               <Form.Group controlId="formEmail">
-                <Form.Control type="email" placeholder="Enter your email" required />
+                <Form.Control type="email" name="user_email" placeholder="Enter your email" required />
                 <Form.Label className="floating-label">Email</Form.Label>
                 {' '}
               </Form.Group>
 
               <Form.Group controlId="formMessage">
-                <Form.Control as="textarea" rows={3} placeholder="Your message" required style={{ resize: 'none' }} />
+                <Form.Control as="textarea" name="message" rows={3} placeholder="Your message" required style={{ resize: 'none' }} />
                 <Form.Label className="floating-label">Message</Form.Label>
                 {' '}
               </Form.Group>
