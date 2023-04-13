@@ -13,12 +13,16 @@ import classroom1 from '../../assets/classroom-placeholder-1.jpg';
 import classroom2 from '../../assets/classroom-placeholder-2.jpg';
 import sanityClient from '../../sanityClient';
 import './homepage.css';
+import useViewportVisibility from '../../helpers/viewportHelper';
 
 function HomePage() {
-  const [visible, setVisible] = useState(false);
-  const [heroVisible, setHeroVisible] = useState(false);
-  const [classroomVisible, setClassroomVisible] = useState(false);
-  const [faqVisible, setFAQVisible] = useState(false);
+  const [heroVisible, onEnterViewportHero, onExitViewportHero] = useViewportVisibility();
+  const [visible, onEnterViewport, onExitViewport] = useViewportVisibility();
+  const [faqVisible, onEnterViewportFAQ, onExitViewportFAQ] = useViewportVisibility();
+  const
+    [classroomVisible, onEnterViewportClassroom, onExitViewportClassroom] = useViewportVisibility();
+  const
+    [portfolioVisible, onEnterViewportPortfolio, onExitViewportPortfolio] = useViewportVisibility();
 
   const [copy, setCopy] = useState([]);
   useEffect(() => {
@@ -31,38 +35,6 @@ function HomePage() {
       )
       .then((data) => setCopy(data));
   }, []);
-
-  const onEnterViewport = () => {
-    setVisible(true);
-  };
-
-  const onExitViewport = () => {
-    setVisible(false);
-  };
-
-  const onEnterViewportHero = () => {
-    setHeroVisible(true);
-  };
-
-  const onExitViewportHero = () => {
-    setHeroVisible(false);
-  };
-
-  const onEnterViewportFAQ = () => {
-    setFAQVisible(true);
-  };
-
-  const onExitViewportFAQ = () => {
-    setFAQVisible(false);
-  };
-
-  const onEnterViewportClassroom = () => {
-    setClassroomVisible(true);
-  };
-
-  const onExitViewportClassroom = () => {
-    setClassroomVisible(false);
-  };
 
   return (
     <Container fluid>
@@ -174,12 +146,23 @@ function HomePage() {
           </Col>
         </Row>
       </ScrollTrigger>
-      <Container style={{ marginTop: '2rem' }}>
-        <h2 style={{ textTransform: 'uppercase' }}>
-          Discover our Portfolio
-        </h2>
-        <ProjectCarousel />
-      </Container>
+      <ScrollTrigger
+        onEnter={onEnterViewportPortfolio}
+        onExit={onExitViewportPortfolio}
+        once={false}
+        offset={{ top: 500 }}
+      >
+        <Container
+          style={{
+            marginTop: '2rem',
+            opacity: portfolioVisible ? 1 : 0,
+            transition: 'opacity 3s',
+          }}
+        >
+          <h2 style={{ textTransform: 'uppercase' }}>Discover our Portfolio</h2>
+          <ProjectCarousel />
+        </Container>
+      </ScrollTrigger>
       <ScrollTrigger
         onEnter={onEnterViewportFAQ}
         onExit={onExitViewportFAQ}

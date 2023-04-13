@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './animatedDropdown.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -7,8 +7,25 @@ function AnimatedNavDropdown({
   showDropdown, // boolean
   setShowDropdown, // function
 }) {
+  const dropdownRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+    if (showDropdown) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showDropdown, setShowDropdown]);
+
   return (
-    <div className="dropdown-wrapper">
+    <div ref={dropdownRef} className="dropdown-wrapper">
       <button
         onClick={setShowDropdown}
         className="trigger-button"

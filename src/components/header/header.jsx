@@ -5,6 +5,7 @@ import AnimatedNavDropdown from '../animatedDropdown/animatedDropdown';
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <Navbar bg="light" expand="lg">
       <Link to="/" className="nav-link">IntelliFusion</Link>
