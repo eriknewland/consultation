@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { lazy, Suspense } from 'react';
 import {
-  BrowserRouter as Router, Route, Routes, useLocation,
+  HashRouter as Router, Route, Routes, useLocation,
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';

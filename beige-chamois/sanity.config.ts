@@ -10,8 +10,6 @@ export default defineConfig({
   name: 'default',
   title: 'beige-chamois',
 
-  basePath: '/admin',
-
   projectId: 'wy648n8k',
   dataset: 'production',
 
