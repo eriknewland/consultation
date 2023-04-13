@@ -1,5 +1,5 @@
 <!-- Add banner here -->
-<img src="https://source.unsplash.com/random/1280x650?technology" alt="random technology image">
+<img src="https://res.cloudinary.com/dcoahzpcf/image/upload/v1681409613/Screen_Shot_2023-04-13_at_11.12.45_AM_malswp.png" alt="home page screenshot">
 
 # Intellifusion: A consultation website
 

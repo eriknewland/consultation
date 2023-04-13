@@ -53,6 +53,8 @@ function HomePage() {
               alignItems: 'center',
               opacity: heroVisible ? 1 : 0,
               transition: 'opacity 3s',
+              marginLeft: '-15px',
+              marginRight: '-15px',
             }}
           >
             <img
