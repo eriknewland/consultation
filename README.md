@@ -1,14 +1,14 @@
 <!-- Add banner here -->
-<img src="https://res.cloudinary.com/dcoahzpcf/image/upload/v1681409613/Screen_Shot_2023-04-13_at_11.12.45_AM_malswp.png" alt="home page screenshot">
+<img src="https://res.cloudinary.com/dcoahzpcf/image/upload/v1681411387/Screen_Shot_2023-04-13_at_11.42.36_AM_jze3pe.png" alt="home page screenshot">
 
 # Intellifusion: A consultation website
 
 A modern headless CMS consultation website featuring React Router, Bootstrap, email.js, and Sanity.io.
 
 
-<p align="center">
+<!-- <p align="center">
   <img src="demo-gif.gif" alt="Collaboration gif">
-</p>
+</p> -->
 
 ## Tech Stack
 <p align="center">
@@ -26,7 +26,7 @@ A modern headless CMS consultation website featuring React Router, Bootstrap, em
 
 <p align="center">
   <b>Email</b><br>
-  <img src="https://res.cloudinary.com/dcoahzpcf/image/upload/v1681368454/Sanity.io-white_rpcq1n.svg" alt="Emailjs" />
+  <img src="https://res.cloudinary.com/dcoahzpcf/image/upload/v1681411677/EmailJS-white_xrzs0l.svg" alt="Emailjs" />
 </p>
 
 # Features
@@ -45,7 +45,6 @@ A modern headless CMS consultation website featuring React Router, Bootstrap, em
 # Table of contents
 
 - [Intellifusion: A consultation website](#intellifusion-a-consultation-website)
-- [Demo-Preview](#demo-preview)
 - [Features](#features)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
@@ -106,13 +105,9 @@ If you're interested in using this project as a template, the major changes you 
 # License
 [(Back to top)](#table-of-contents)
 
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+[MIT Software License](https://opensource.org/license/mit/)
 
 # Closing Thoughts
 [(Back to top)](#table-of-contents)
 
-Lorem Ipsum...
-
-<!-- Add the footer here -->
-
-![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png)
+Headless CMS is fun alternative approach to data management! I really enjoy working with Sanity.io as you have a ton of flexibility with document structure, GROQ/Schemas are easy to configure, and the Sanity Studio makes updating documents simple.

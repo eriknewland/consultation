@@ -1,19 +1,13 @@
 
 .trigger-button {
-  /* padding: 10px; */
-  /* background: teal; */
-  /* color: #fff; */
-  /* font-size: 18px; */
   border: none;
   border-radius: 10px;
-  /* width: 200px; */
   vertical-align: baseline;
   background: none
 }
 
 .dropdown-wrapper {
   position: relative;
-  /* width: 200px; */
 }
 
 .dropdown-wrapper .dropdown {
@@ -23,7 +17,6 @@
   position: absolute;
   top: 50px;
   left: 0;
-  /* font-family: "Open Sans"; */
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -41,12 +34,11 @@ ul {
   height: 0px;
   transition: height 0.3s ease;
   padding: 0;
-  right: 0; /* Add this line to align the menu to the right */
+  right: 0;
 }
 
 ul.active {
   height: 120px;
-  /* overflow: auto; */
 }
 
 li {
@@ -56,7 +48,6 @@ li {
 }
 
 li:hover {
-  /* font-size: 19px; */
   transform: scale(1.05);
   cursor: pointer;
   text-decoration: underline;
