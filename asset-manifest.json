@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/consultation/static/css/main.015aa8f4.css",
+    "main.js": "/consultation/static/js/main.9fdf19cc.js",
+    "static/css/398.3d5ac618.chunk.css": "/consultation/static/css/398.3d5ac618.chunk.css",
+    "static/js/398.0bfda85b.chunk.js": "/consultation/static/js/398.0bfda85b.chunk.js",
+    "static/js/726.8b26b93b.chunk.js": "/consultation/static/js/726.8b26b93b.chunk.js",
+    "static/js/891.4676013f.chunk.js": "/consultation/static/js/891.4676013f.chunk.js",
+    "static/media/classroom-placeholder-1.webp": "/consultation/static/media/classroom-placeholder-1.71e1c782a09bbce76e14.webp",
+    "static/media/process-placeholder2.webp": "/consultation/static/media/process-placeholder2.7d0aa9b70f9393a189b5.webp",
+    "static/media/process-placeholder1.webp": "/consultation/static/media/process-placeholder1.880d69110612a986908e.webp",
+    "static/media/hero-placeholder2.webp": "/consultation/static/media/hero-placeholder2.3da1f1c76d9f4a0d4bbf.webp",
+    "static/media/classroom-placeholder-2.webp": "/consultation/static/media/classroom-placeholder-2.5b6b223a9e9b144bae9c.webp",
+    "static/media/process-placeholder3.webp": "/consultation/static/media/process-placeholder3.a29fae04ac0bfc82715f.webp",
+    "static/media/logo.png": "/consultation/static/media/logo.741b9100d472949df141.png",
+    "index.html": "/consultation/index.html",
+    "main.015aa8f4.css.map": "/consultation/static/css/main.015aa8f4.css.map",
+    "main.9fdf19cc.js.map": "/consultation/static/js/main.9fdf19cc.js.map",
+    "398.3d5ac618.chunk.css.map": "/consultation/static/css/398.3d5ac618.chunk.css.map",
+    "398.0bfda85b.chunk.js.map": "/consultation/static/js/398.0bfda85b.chunk.js.map",
+    "726.8b26b93b.chunk.js.map": "/consultation/static/js/726.8b26b93b.chunk.js.map",
+    "891.4676013f.chunk.js.map": "/consultation/static/js/891.4676013f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.015aa8f4.css",
+    "static/js/main.9fdf19cc.js"
+  ]
+}
